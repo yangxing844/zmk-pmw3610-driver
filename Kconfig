@@ -42,6 +42,13 @@ config PMW3610_SNIPE_CPI
     help
       Snipe CPI value, with 200 step
 
+config PMW3610_SCROLL_CPI
+    int "PMW3610's scroll CPI in scroll mode"
+    default 200
+    range 200 3200
+    help
+        Scroll CPI value, with 200 step
+
 config PMW3610_SNIPE_CPI_DIVIDOR
     int "PMW3610's CPI dividor in snipe mode"
     default 1
