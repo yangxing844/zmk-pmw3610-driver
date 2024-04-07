@@ -595,7 +595,7 @@ static int pmw3610_report_data(const struct device *dev) {
         dividor = CONFIG_PMW3610_CPI_DIVIDOR;
         break;
     case SCROLL:
-        set_cpi_if_needed(dev, CONFIG_PMW3610_CPI);
+        set_cpi_if_needed(dev, CONFIG_PMW3610_SCROLL_CPI);
         if (input_mode_changed) {
             data->scroll_delta_x = 0;
             data->scroll_delta_y = 0;
